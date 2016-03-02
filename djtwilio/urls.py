@@ -18,4 +18,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+
+    url(r'^sms/$', 'djtwilio.views.sms'),
+    url(r'^ring/$','djtwilio.views.ring'),
 ]
